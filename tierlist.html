@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolken Tierlist</title>
+    <link rel="stylesheet" href="tierlist.css">
+</head>
+<body>
+    <header class="tierlist-hero">
+        <div class="hero-shell">
+            <div class="header-top">
+                <div class="headline-block">
+                    <p class="eyebrow">Wolken PvP Ranking</p>
+                    <h1>Tierlist</h1>
+                    <p class="hero-text">
+                        Alle Modi auf einen Blick. Wechsel zwischen den Kategorien oder schau dir im Overall-Tab das automatisch berechnete Gesamtbild an.
+                    </p>
+                </div>
+
+                <div class="header-actions">
+                    <a href="index.html" class="back-button">Startseite</a>
+                    <a href="https://discord.gg/HPPsvCpykZ" target="_blank" class="discord-button">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/discord.svg" alt="Discord">
+                        Discord
+                    </a>
+                </div>
+            </div>
+
+            <nav id="mode-tabs" class="mode-tabs"></nav>
+        </div>
+    </header>
+
+    <main id="tierlist-container" class="tierlist-container">
+        <!-- Tierlist wird hier geladen -->
+    </main>
+
+    <div id="player-modal" class="player-modal hidden" aria-hidden="true">
+        <div class="modal-backdrop" data-close-modal="true"></div>
+        <section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-player-name">
+            <button id="close-modal" class="close-modal" type="button" aria-label="Profil schliessen">x</button>
+            <div id="modal-content"></div>
+        </section>
+    </div>
+
+    <script src="tierlist.js"></script>
+</body>
+</html>
